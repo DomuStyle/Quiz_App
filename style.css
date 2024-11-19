@@ -1,0 +1,12 @@
+body {
+    background-color: rgba(254,250,239,1) !important;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(254,250,239,1) !important;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
