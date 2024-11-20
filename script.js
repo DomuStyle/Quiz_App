@@ -23,10 +23,14 @@ function validateAnswer(selection) {
     console.log('selected question number is question is:', selectionNumber);
     console.log('current question is:', rightAnswer['right_answer']);
     
+    let rightAnswerId = `answer_${rightAnswer['right_answer']}`;
+
     if (selectionNumber == rightAnswer['right_answer']) {
         console.log('Right Answer!!!');
-        
+        document.getElementById(selection).parentNode.classList.add('bg-success');
     } else {
         console.log('Wrong answer, try again!');
+        document.getElementById(selection).parentNode.classList.add('bg-danger');
+        document.getElementById(rightAnswerId).parentNode.classList.add('bg-success');
     };
 }
