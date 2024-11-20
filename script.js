@@ -15,3 +15,18 @@ function showQuestion() {
     document.getElementById('answer_3').innerHTML = question['answer_3'];
     document.getElementById('answer_4').innerHTML = question['answer_4'];
 }
+
+function validateAnswer(selection) {
+    let rightAnswer = questions[currentQuestion];
+    console.log('selected Answer is:', selection);
+    let selectionNumber = selection.slice(-1);
+    console.log('selected question number is question is:', selectionNumber);
+    console.log('current question is:', rightAnswer['right_answer']);
+    
+    if (selectionNumber == rightAnswer['right_answer']) {
+        console.log('Right Answer!!!');
+        
+    } else {
+        console.log('Wrong answer, try again!');
+    };
+}
