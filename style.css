@@ -10,3 +10,12 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.quiz_card {
+    width: 30rem;
+}
+
+.question_footer {
+    display: flex;
+    justify-content: space-between;
+}
