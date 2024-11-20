@@ -33,4 +33,24 @@ function validateAnswer(selection) {
         document.getElementById(selection).parentNode.classList.add('bg-danger');
         document.getElementById(rightAnswerId).parentNode.classList.add('bg-success');
     };
+
+    document.getElementById('next_question_btn').disabled = false;
+}
+
+function nextQuestion() {
+    currentQuestion++ ;
+    document.getElementById('next_question_btn').disabled = true;
+    resetAnswerButtons();
+    showQuestion();    
+}
+
+function resetAnswerButtons() {
+    document.getElementById('answer_1').parentNode.classList.remove('bg-danger');
+    document.getElementById('answer_1').parentNode.classList.remove('bg-success');
+    document.getElementById('answer_2').parentNode.classList.remove('bg-danger');
+    document.getElementById('answer_2').parentNode.classList.remove('bg-success');
+    document.getElementById('answer_3').parentNode.classList.remove('bg-danger');
+    document.getElementById('answer_3').parentNode.classList.remove('bg-success');
+    document.getElementById('answer_4').parentNode.classList.remove('bg-danger');
+    document.getElementById('answer_4').parentNode.classList.remove('bg-success');
 }
