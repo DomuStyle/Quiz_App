@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </head>
-<body>
+<body onLoad="init()">
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
           <span class="navbar-brand mb-0 h1">Dom´s Quiz App</span>
@@ -48,11 +48,13 @@
             
         <div class="question_footer">
             <span>
-                <b>1</b> of <b>5</b> Questions
+                <b>1</b> of <b id="total_questions">5</b> Questions
             </span>
             <button class="btn btn-secondary">Next Question</button>
         </div>
         </div>
     </div>
 </body>
+<script src="./scripts/db.js"></script>
+<script src="./script.js"></script>
 </html>

@@ -46,5 +46,37 @@ let questions = [
         "answer_3": "sleep()",
         "answer_4": "wait()",
         "right_answer": 1
+    },
+    {
+        "question": "What is the result of 'null == undefined' in JavaScript?",
+        "answer_1": "true",
+        "answer_2": "false",
+        "answer_3": "null",
+        "answer_4": "undefined",
+        "right_answer": 1
+    },
+    {
+        "question": "What does the spread operator (...) do when used on an array?",
+        "answer_1": "It compresses the array into a single value",
+        "answer_2": "It expands the array into individual elements",
+        "answer_3": "It removes duplicate elements",
+        "answer_4": "It sorts the array in ascending order",
+        "right_answer": 2
+    },
+    {
+        "question": "What is the purpose of the 'this' keyword in JavaScript?",
+        "answer_1": "It refers to the current HTML element",
+        "answer_2": "It points to the global object",
+        "answer_3": "It references the current execution context of a function",
+        "answer_4": "It is used to declare new variables",
+        "right_answer": 3
+    },
+    {
+        "question": "How can you create a private variable in JavaScript using a closure?",
+        "answer_1": "Use the 'private' keyword",
+        "answer_2": "Enclose a variable within an immediately invoked function expression (IIFE)",
+        "answer_3": "Prefix the variable name with '#'",
+        "answer_4": "Declare it with 'var' inside a function",
+        "right_answer": 2
     }
 ];
