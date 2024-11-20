@@ -9,6 +9,7 @@ function init() {
 function showQuestion() {
     let question = questions[currentQuestion];
     
+    document.getElementById('question_count').innerHTML= currentQuestion + 1;
     document.getElementById('question_text').innerHTML = question['question'];
     document.getElementById('answer_1').innerHTML = question['answer_1'];
     document.getElementById('answer_2').innerHTML = question['answer_2'];
