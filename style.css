@@ -18,4 +18,7 @@ body {
 .question_footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    border-top: 1px solid rgba(0,0,0,0.4);
 }
