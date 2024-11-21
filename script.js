@@ -2,6 +2,10 @@ let currentQuestion = 0;
 
 let rightAnswers = 0;
 
+let audioSuccess = new Audio('/assets/wav_sounds/242501__gabrielaraujo__powerupsuccess.wav');
+
+let audioFailure = new Audio('/assets/wav_sounds/242503__gabrielaraujo__failurewrong-action.wav');
+
 function init() {
     document.getElementById('total_questions').innerHTML = questions.length;
 
@@ -35,7 +39,6 @@ function showQuestion() {
         document.getElementById('answer_2').innerHTML = question['answer_2'];
         document.getElementById('answer_3').innerHTML = question['answer_3'];
         document.getElementById('answer_4').innerHTML = question['answer_4'];
-
     }
 }
 
@@ -52,11 +55,13 @@ function validateAnswer(selection) {
         console.log('Right Answer!!!');
         document.getElementById(selection).parentNode.classList.add('bg-success');
         rightAnswers++ ;
+        audioSuccess.play();
     } else {
         console.log('Wrong answer, try again!');
         document.getElementById(selection).parentNode.classList.add('bg-danger');
         document.getElementById(rightAnswerId).parentNode.classList.add('bg-success');
-    };
+        audioFailure.play();
+    }
 
     document.getElementById('next_question_btn').disabled = false;
 }
