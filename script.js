@@ -19,6 +19,14 @@ function showQuestion() {
         document.getElementById('total_right_answers').innerHTML = rightAnswers;
         document.getElementById('header_img').src = './assets/img/trophy_1280.png';
     } else  {
+        let progress = (currentQuestion + 1) / questions.length;
+        progress = Math.round(progress * 100);
+
+        document.getElementById('progress_bar').innerHTML = `${progress} %`;
+        document.getElementById('progress_bar').style = `width: ${progress}%;`;
+        console.log('Fortschritt:', progress);
+        
+
         let question = questions[currentQuestion];
     
         document.getElementById('question_count').innerHTML= currentQuestion + 1;
