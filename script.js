@@ -1,5 +1,7 @@
 let currentQuestion = 0;
 
+let rightAnswers = 0;
+
 function init() {
     document.getElementById('total_questions').innerHTML = questions.length;
 
@@ -12,6 +14,9 @@ function showQuestion() {
         //show end screen
         document.getElementById('end_screen').style = '';
         document.getElementById('question_body').style = 'display: none;';
+        
+        document.getElementById('total_questions_end').innerHTML = questions.length;
+        document.getElementById('total_right_answers').innerHTML = rightAnswers;
     } else  {
         let question = questions[currentQuestion];
     
@@ -37,6 +42,7 @@ function validateAnswer(selection) {
     if (selectionNumber == rightAnswer['right_answer']) {
         console.log('Right Answer!!!');
         document.getElementById(selection).parentNode.classList.add('bg-success');
+        rightAnswers++ ;
     } else {
         console.log('Wrong answer, try again!');
         document.getElementById(selection).parentNode.classList.add('bg-danger');
