@@ -19,39 +19,44 @@
     <div class="container">
         <div class="card quiz_card">
             <img src="./assets/img/pencil_bg_1280.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-            <h5 class="card-title" id="question_text">Question</h5>
-                
-        <div onclick="validateAnswer('answer_1')" class="card mb-2 quiz_answer">
-            <div class="card-body" id="answer_1">
-                Answer
-            </div>
-        </div>
 
-        <div onclick="validateAnswer('answer_2')" class="card mb-2 quiz_answer">
-            <div class="card-body" id="answer_2">
-                Answer
-            </div>
-        </div>
+            <div class="card-body" id="end_screen" style="display: none;">
+                Quiz finished!
+            </div> 
 
-        <div onclick="validateAnswer('answer_3')" class="card mb-2 quiz_answer">
-            <div class="card-body" id="answer_3">
-                Answer
-            </div>
-        </div>
+            <div class="card-body" id="question_body" >
+                <h5 class="card-title" id="question_text">Question</h5>
+                   
+                <div onclick="validateAnswer('answer_1')" class="card mb-2 quiz_answer">
+                    <div class="card-body" id="answer_1">
+                        Answer
+                    </div>
+                </div>
 
-        <div onclick="validateAnswer('answer_4')" class="card mb-2 quiz_answer">
-            <div class="card-body" id="answer_4">
-                Answer
-            </div>
-        </div>
+                <div onclick="validateAnswer('answer_2')" class="card mb-2 quiz_answer">
+                <div class="card-body" id="answer_2">
+                    Answer
+                </div>
+                </div>
+
+                <div onclick="validateAnswer('answer_3')" class="card mb-2 quiz_answer">
+                    <div class="card-body" id="answer_3">
+                        Answer
+                    </div>
+                </div>
+
+                <div onclick="validateAnswer('answer_4')" class="card mb-2 quiz_answer">
+                    <div class="card-body" id="answer_4">
+                        Answer
+                    </div>
+                </div>
             
-        <div class="question_footer">
-            <span>
-                <b id="question_count">1</b> of <b id="total_questions">5</b> Questions
-            </span>
-            <button onclick="nextQuestion()" class="btn btn-secondary" id="next_question_btn" disabled>Next Question</button>
-        </div>
+            <div class="question_footer">
+                <span>
+                    <b id="question_count">1</b> of <b id="total_questions">5</b> Questions
+                </span>
+                <button onclick="nextQuestion()" class="btn btn-secondary" id="next_question_btn" disabled>Next Question</button>
+            </div>
         </div>
     </div>
 </body>

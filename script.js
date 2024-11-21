@@ -7,14 +7,22 @@ function init() {
 }
 
 function showQuestion() {
-    let question = questions[currentQuestion];
+
+    if (currentQuestion >= questions.length) {
+        //show end screen
+        document.getElementById('end_screen').style = '';
+        document.getElementById('question_body').style = 'display: none;';
+    } else  {
+        let question = questions[currentQuestion];
     
-    document.getElementById('question_count').innerHTML= currentQuestion + 1;
-    document.getElementById('question_text').innerHTML = question['question'];
-    document.getElementById('answer_1').innerHTML = question['answer_1'];
-    document.getElementById('answer_2').innerHTML = question['answer_2'];
-    document.getElementById('answer_3').innerHTML = question['answer_3'];
-    document.getElementById('answer_4').innerHTML = question['answer_4'];
+        document.getElementById('question_count').innerHTML= currentQuestion + 1;
+        document.getElementById('question_text').innerHTML = question['question'];
+        document.getElementById('answer_1').innerHTML = question['answer_1'];
+        document.getElementById('answer_2').innerHTML = question['answer_2'];
+        document.getElementById('answer_3').innerHTML = question['answer_3'];
+        document.getElementById('answer_4').innerHTML = question['answer_4'];
+
+    }
 }
 
 function validateAnswer(selection) {
