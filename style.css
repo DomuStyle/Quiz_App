@@ -31,3 +31,11 @@ body {
 .bg-danger, .bg-success {
     color: white !important;
 }
+
+.width_100 {
+    width: 100%;
+}
+
+.text_center {
+    text-align: center;
+}
