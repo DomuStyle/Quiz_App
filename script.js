@@ -78,3 +78,15 @@ function resetAnswerButtons() {
     document.getElementById('answer_4').parentNode.classList.remove('bg-danger');
     document.getElementById('answer_4').parentNode.classList.remove('bg-success');
 }
+
+function resetQuizCard() {
+    document.getElementById('header_img').src = './assets/img/pencil_bg_1280.jpg';
+    document.getElementById('question_body').style = '';
+    document.getElementById('end_screen').style = 'display: none;';
+
+    currentQuestion = 0;
+    rightAnswers = 0;
+    rightAnswers.innerHTML = '';
+
+    init();
+}

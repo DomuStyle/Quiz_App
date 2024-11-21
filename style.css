@@ -45,3 +45,9 @@ body {
     font-size: 32px;
     padding: 32px 0;
 }
+
+.btn_row {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
