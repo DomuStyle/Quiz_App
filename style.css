@@ -39,3 +39,9 @@ body {
 .text_center {
     text-align: center;
 }
+
+.finished_text {
+    font-weight: 900;
+    font-size: 32px;
+    padding: 32px 0;
+}

@@ -17,6 +17,7 @@ function showQuestion() {
         
         document.getElementById('total_questions_end').innerHTML = questions.length;
         document.getElementById('total_right_answers').innerHTML = rightAnswers;
+        document.getElementById('header_img').src = './assets/img/trophy_1280.png';
     } else  {
         let question = questions[currentQuestion];
     
